@@ -23,35 +23,47 @@
   </head>
   <body>
     <header>
-      <div class="container containerinheader">
+      <div class="container page-header">
         <nav>
-          <ul class="header">
+          <ul class="page-header__list">
             <li>
-              <a href="./index.html" class="logoheader">
-                <span class="firstpartlogo">Web</span
-                ><span class="thirdpartlogo">Studio</span></a
+              <a href="./index.html" class="logo">
+                <span class="logo__first-part">Web</span
+                ><span class="logo__second-part">Studio</span></a
               >
             </li>
-            <li class="li-agencja">
-              <a class="interactive agencja" href="Agencja">Agencja</a>
+            <li class="page-header__item-2">
+              <a
+                class="page-header__item-2__gallery page-header__item-2 page-header__item-2--changed-color"
+                href="Agencja"
+                >Agencja</a
+              >
             </li>
-            <li>
-              <a class="interactive" href="./portfolio.html">Portfolio</a>
+            <li class="page-header__item">
+              <a class="page-header__item__gallery" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
-            <li>
-              <a class="interactive" href="Kontakt">Kontakt</a>
+            <li class="page-header__item">
+              <a class="page-header__item__gallery" href="Kontakt">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <div class="secondpartheader">
-          <a class="interactive" href="mailto:info@devstudio.com">
-            <svg class="icon-envelope">
+        <div class="page-header-second-part">
+          <a
+            class="page-header__item__gallery"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="page-header-second-part__icon-envelope">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             <span>info@devstudio.com</span>
           </a>
-          <a class="interactive last" href="tel:+48111111111">
-            <svg class="icon-smartphone">
+          <a
+            class="page-header__item__gallery page-header__item__gallery--changed-margin"
+            href="tel:+48111111111"
+          >
+            <svg class="page-header-second-part__icon-smartphone">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             <span>+48 111 111 111</span>
@@ -60,20 +72,20 @@
       </div>
     </header>
     <main>
-      <section class="tittle">
-        <div class="container proffession-general">
+      <section class="title">
+        <div class="container title__content">
           <h1>efektywne rozwiązania<br />dla waszego biznesu</h1>
-          <button type="button" class="buttonstudio" data-modal-open>
+          <button type="button" class="title__button" data-modal-open>
             Zamów usługę
           </button>
         </div>
       </section>
-      <section>
-        <div class="container loremipsummargin">
-          <ul class="loremipsum">
-            <li class="loremipsum-items">
+      <section class="lorem-ipsum">
+        <div class="container lorem-ipsum lorem-ipsum--changed-margin">
+          <ul class="lorem-ipsum__list">
+            <li class="lorem-ipsum__items">
               <svg
-                class="icon-antenna-1"
+                class="lorem-ipsum__icon-antenna"
                 height="120"
                 width="270"
                 style="outline: 1px solid rgba(245, 244, 250, 1)"
@@ -93,9 +105,9 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="loremipsum-items">
+            <li class="lorem-ipsum__items">
               <svg
-                class="icon-clock-1"
+                class="lorem-ipsum__icon-clock"
                 width="270"
                 height="120"
                 style="outline: 1px solid rgba(245, 244, 250, 1)"
@@ -115,9 +127,9 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="loremipsum-items">
+            <li class="lorem-ipsum__items">
               <svg
-                class="icon-diagram-1"
+                class="lorem-ipsum__icon-diagram"
                 width="270"
                 height="120"
                 style="outline: 1px solid rgba(245, 244, 250, 1)"
@@ -137,9 +149,9 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="loremipsum-items">
+            <li class="lorem-ipsum__items">
               <svg
-                class="icon-astronaut-1"
+                class="lorem-ipsum__icon-astronaut"
                 width="270"
                 height="120"
                 style="outline: 1px solid rgba(245, 244, 250, 1)"
@@ -162,45 +174,46 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
+      <section class="services">
+        <div class="container services__content">
           <h2>Czym się zajmujemy</h2>
-          <ul class="profession-set">
-            <li class="profession-item">
+          <ul class="services__list">
+            <li class="services__item">
               <img
                 src="images/box-image-1.jpg"
                 alt="mężczyzna programuje uzywajac dwoch monitorów"
                 width="370"
                 height="294"
               />
-              <p class="label">aplikacje komputerowe</p>
+              <p class="services__description">aplikacje komputerowe</p>
             </li>
-            <li class="profession-item">
+            <li class="services__item">
               <img
                 src="images/box-image-2.jpg"
                 alt="mezczyzna trzyma komorke w lewej dloni i na monitorze wyswitlaja sie trzy telefony komorkowe"
                 width="370"
                 height="294"
               />
-              <p class="label">aplikacje mobilne</p>
+              <p class="services__description">aplikacje mobilne</p>
             </li>
-            <li class="profession-item">
+            <li class="services__item">
               <img
                 src="images/box-image-3.jpg"
                 alt="wyswitlona na tablecie skala kolorow"
                 width="370"
                 height="294"
               />
-              <p class="label">rozwiązania graficzne</p>
+              <p class="services__description">rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="ourteamblock">
-        <div class="container ourteam-concent">
+
+      <section class="team">
+        <div class="container team__concent">
           <h2>Nasz zespół</h2>
-          <ul class="ourteam">
-            <li class="ourteam-item">
+          <ul class="team__list">
+            <li class="team__items">
               <figure>
                 <img
                   src="images/team-card-image-1.jpg"
@@ -208,33 +221,33 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="namemargin">
-                  <p class="nameindex">John Doe</p>
-                  <p class="proffession">Product Designer</p>
-                  <ul class="ourteam-flex socialmedia-icons-list">
+                <figcaption class="team__figcaption-content">
+                  <p class="team__desciption-first-part">John Doe</p>
+                  <p class="team__desciption-second-part">Product Designer</p>
+                  <ul class="team team--margin team__socialmedia-contents-list">
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-instagram-2"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-twitter-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-facebook-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-linkedin-1"></use>
                         </svg>
@@ -244,7 +257,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="ourteam-item">
+            <li class="team__items">
               <figure>
                 <img
                   src="images/team-card-image-2.jpg"
@@ -252,33 +265,33 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="namemargin">
-                  <p class="nameindex">John Doe</p>
-                  <p class="proffession">Frontend Developer</p>
-                  <ul class="ourteam-flex socialmedia-icons-list">
+                <figcaption class="team__figcaption-content">
+                  <p class="team__desciption-first-part">John Doe</p>
+                  <p class="team__desciption-second-part">Frontend Developer</p>
+                  <ul class="team team--margin team__socialmedia-contents-list">
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-instagram-2"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-twitter-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-facebook-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-linkedin-1"></use>
                         </svg>
@@ -288,7 +301,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="ourteam-item">
+            <li class="team__items">
               <figure>
                 <img
                   src="images/team-card-image-3.jpg"
@@ -296,33 +309,33 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="namemargin">
-                  <p class="nameindex">John Doe</p>
-                  <p class="proffession">Marketing</p>
-                  <ul class="ourteam-flex socialmedia-icons-list">
+                <figcaption class="team__figcaption-content">
+                  <p class="team__desciption-first-part">John Doe</p>
+                  <p class="team__desciption-second-part">Marketing</p>
+                  <ul class="team team--margin team__socialmedia-contents-list">
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-instagram-2"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-twitter-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-facebook-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-linkedin-1"></use>
                         </svg>
@@ -332,7 +345,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="ourteam-item">
+            <li class="team__items">
               <figure>
                 <img
                   src="images/team-card-image-4.jpg"
@@ -340,33 +353,33 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="namemargin">
-                  <p class="nameindex">John Doe</p>
-                  <p class="proffession">UI Designer</p>
-                  <ul class="ourteam-flex socialmedia-icons-list">
+                <figcaption class="team__figcaption-content">
+                  <p class="team__desciption-first-part">John Doe</p>
+                  <p class="team__desciption-second-part">UI Designer</p>
+                  <ul class="team team--margin team__socialmedia-contents-list">
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-instagram-2"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-twitter-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-facebook-1"></use>
                         </svg>
                       </div>
                     </li>
                     <li>
-                      <div class="socialmedia-icon">
+                      <div class="team__socialmedia-content">
                         <svg width="20" height="20">
                           <use href="./images/icons.svg#icon-linkedin-1"></use>
                         </svg>
@@ -420,7 +433,7 @@
     <footer>
       <div class="container footermain">
         <div class="oldpartoffooter">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="nnlogo"
             ><span class="firstpartlogo">Web</span
             ><span class="secondpartlogo">Studio</span></a
           >
@@ -430,30 +443,30 @@
         </div>
         <div class="newpartoffooter">
           <h3 class="h3footer">dołącz do nas</h3>
-          <ul class="socialmedia-icons-list">
+          <ul class="team__socialmedia-contents-list">
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
