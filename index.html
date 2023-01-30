@@ -27,7 +27,7 @@
         <nav>
           <ul class="page-header__list">
             <li>
-              <a href="./index.html" class="logo">
+              <a href="./index.html" class="logo logo--changed-decoration">
                 <span class="logo__first-part">Web</span
                 ><span class="logo__second-part">Studio</span></a
               >
@@ -208,7 +208,6 @@
           </ul>
         </div>
       </section>
-
       <section class="team">
         <div class="container team__concent">
           <h2>Nasz zespół</h2>
@@ -224,7 +223,9 @@
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Product Designer</p>
-                  <ul class="team__socialmedia-contents-list">
+                  <ul
+                    class="team__socialmedia-contents-list team__socialmedia-contents-list-second-part"
+                  >
                     <li>
                       <div class="team__socialmedia-content">
                         <svg width="20" height="20">
@@ -268,7 +269,9 @@
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Frontend Developer</p>
-                  <ul class="team__socialmedia-contents-list">
+                  <ul
+                    class="team__socialmedia-contents-list team__socialmedia-contents-list-second-part"
+                  >
                     <li>
                       <div class="team__socialmedia-content">
                         <svg width="20" height="20">
@@ -312,7 +315,9 @@
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Marketing</p>
-                  <ul class="team__socialmedia-contents-list">
+                  <ul
+                    class="team__socialmedia-contents-list team__socialmedia-contents-list-second-part"
+                  >
                     <li>
                       <div class="team__socialmedia-content">
                         <svg width="20" height="20">
@@ -356,7 +361,9 @@
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">UI Designer</p>
-                  <ul class="team__socialmedia-contents-list">
+                  <ul
+                    class="team__socialmedia-contents-list team__socialmedia-contents-list-second-part"
+                  >
                     <li>
                       <div class="team__socialmedia-content">
                         <svg width="20" height="20">
@@ -431,18 +438,20 @@
       </section>
     </main>
     <footer>
-      <div class="container footermain">
-        <div class="oldpartoffooter">
-          <a href="./index.html" class="nnlogo"
-            ><span class="firstpartlogo">Web</span
-            ><span class="secondpartlogo">Studio</span></a
+      <div class="container footer-container">
+        <div class="footer-container__first-part">
+          <a href="./index.html" class="logo"
+            ><span class="logo__first-part">Web</span
+            ><span class="logo__third-part">Studio</span></a
           >
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <p class="email">info@example.com</p>
-          <p class="telnr">+48 111 111 111</p>
+          <address class="footer-container__address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <p class="footer-container__email">info@example.com</p>
+          <p class="footer-container__telnr">+48 111 111 111</p>
         </div>
-        <div class="newpartoffooter">
-          <h3 class="h3footer">dołącz do nas</h3>
+        <div class="footer-container__second-part">
+          <h3 class="footer-container__name">dołącz do nas</h3>
           <ul class="team__socialmedia-contents-list">
             <li>
               <div class="team__socialmedia-content">
@@ -474,24 +483,26 @@
             </li>
           </ul>
         </div>
-        <div class="third-part-of-footer">
+        <div class="footer-container__third-part">
           <form>
-            <div class="news-part1">
-              <div class="email-input-container">
-                <label for="footer-email-input-id" class="label-footer"
+            <div class="footer-container__third-part-flexbox">
+              <div class="footer-container-content">
+                <label
+                  for="footer-email-input-id"
+                  class="footer-container-content__name"
                   >zapisz się do newslettera</label
                 >
                 <input
                   id="footer-email-input-id"
                   type="email"
                   name="email"
-                  class="newsletter-input"
+                  class="footer-container-content__input"
                   placeholder="E-mail"
                 />
               </div>
               <button type="submit" class="button-footer">
                 Zapisz się
-                <svg class="footer-svg" width="24" height="24">
+                <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-strzalka"></use>
                 </svg>
               </button>
@@ -576,13 +587,21 @@
                 id="checkbox-input"
                 type="checkbox"
                 name="checkbox"
-                class="modal-window-content__description"
+                class="modal-window-content__input-2"
               />
-              <label for="checkbox-input" class="label-checkbox"
+              <label
+                for="checkbox-input"
+                class="modal-window-content__description-2"
                 >Oświadczam iź akceptuje
-                <a class="blue-part" href="regulamin">Regulamin</a>
+                <a
+                  class="modal-window-content__description-2-first-part"
+                  href="regulamin"
+                  >Regulamin</a
+                >
                 i
-                <a class="blue-part" href="politykaprywatnosci"
+                <a
+                  class="modal-window-content__description-2-first-part"
+                  href="politykaprywatnosci"
                   >Politykę Prywatności.</a
                 ></label
               >

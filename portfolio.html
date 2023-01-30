@@ -16,43 +16,54 @@
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      gird-figcaption__name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <div class="container containerinheader">
+      <div class="container page-header">
         <nav>
-          <ul class="header">
+          <ul class="page-header__list">
             <li>
-              <a href="./index.html" class="logoheader">
-                <span class="firstpartlogo">Web</span
-                ><span class="thirdpartlogo">Studio</span></a
+              <a href="./index.html" class="logo logo--changed-decoration">
+                <span class="logo__first-part">Web</span
+                ><span class="logo__second-part">Studio</span></a
               >
             </li>
-            <li>
-              <a class="interactive" href="Agencja">Agencja</a>
+            <li class="page-header__item">
+              <a class="page-header__item__gallery" href="Agencja">Agencja</a>
             </li>
-            <li class="li-portfolio">
-              <a class="interactive portfolio-header" href="./portfolio.html"
+            <li class="page-header__item-2">
+              <a
+                class="page-header__item__gallery page-header__item-2 page-header__item-2--changed-color"
+                href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li>
-              <a class="interactive" href="Kontakt">Kontakt</a>
+            <li class="page-header__item">
+              <a class="page-header__item__gallery" href="Kontakt">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <div class="secondpartheader">
-          <a class="interactive" href="mailto:info@devstudio.com">
-            <svg class="icon-envelope">
+        <div class="page-header-second-part">
+          <a
+            class="page-header__item__gallery"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="page-header-second-part__icon-envelope">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             <span>info@devstudio.com</span>
           </a>
-          <a class="interactive last" href="tel:+48111111111">
-            <svg class="icon-smartphone">
+          <a
+            class="page-header__item__gallery page-header__item__gallery--changed-margin"
+            href="tel:+48111111111"
+          >
+            <svg class="page-header-second-part__icon-smartphone">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             <span>+48 111 111 111</span>
@@ -63,41 +74,57 @@
     <main>
       <section>
         <div class="container menu-section">
-          <ul class="menu">
+          <ul class="menu-section__list">
             <li>
-              <button type="button" class="wszystkie shadow button-portfolio">
+              <button
+                type="button"
+                class="menu-section__item-1 button-portfolio"
+              >
                 Wszystkie
               </button>
             </li>
             <li>
-              <button type="button" class="strony shadow button-portfolio">
+              <button
+                type="button"
+                class="menu-section__item-2 button-portfolio"
+              >
                 Strony
               </button>
             </li>
             <li>
-              <button type="button" class="aplikacje shadow button-portfolio">
+              <button
+                type="button"
+                class="menu-section__item-3 button-portfolio"
+              >
                 Aplikacje
               </button>
             </li>
             <li>
-              <button type="button" class="dizajn shadow button-portfolio">
+              <button
+                type="button"
+                class="menu-section__item-4 button-portfolio"
+              >
                 Dizajn
               </button>
             </li>
             <li>
-              <button type="button" class="marketing shadow button-portfolio">
+              <button
+                type="button"
+                class="menu-section__item-5 button-portfolio"
+              >
                 Marketing
               </button>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container pictures">
-          <ul class="portfolio">
-            <li class="portfolio-item">
+
+      <section class="portfolio">
+        <div class="container products">
+          <ul class="grid">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/womenmanwomen.jpg"
                     width="370"
@@ -111,15 +138,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Technocrack</p>
-                  <p class="proffessionport">Strona internetowa</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Technocrack</p>
+                  <p class="gird-figcaption__proffession">Strona internetowa</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/basketboolplayers.jpg"
                     width="370"
@@ -133,15 +160,17 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Grafika New Orlean vs Golden Star</p>
-                  <p class="proffessionport">Dizajn</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">
+                    Grafika New Orlean vs Golden Star
+                  </p>
+                  <p class="gird-figcaption__proffession">Dizajn</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/fish.jpg"
                     width="370"
@@ -155,15 +184,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Restauracja Seafood</p>
-                  <p class="proffessionport">Aplikacja</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Restauracja Seafood</p>
+                  <p class="gird-figcaption__proffession">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/headphones.jpg"
                     width="370"
@@ -177,15 +206,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Projekt Prime</p>
-                  <p class="proffessionport">Marketing</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Projekt Prime</p>
+                  <p class="gird-figcaption__proffession">Marketing</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/twoboxes.jpg"
                     width="370"
@@ -199,15 +228,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Projekt Boxes</p>
-                  <p class="proffessionport">Aplikacja</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Projekt Boxes</p>
+                  <p class="gird-figcaption__proffession">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/monitor.jpg"
                     width="370"
@@ -221,15 +250,17 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Inspiration has no Borders</p>
-                  <p class="proffessionport">Strona internetowa</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">
+                    Inspiration has no Borders
+                  </p>
+                  <p class="gird-figcaption__proffession">Strona internetowa</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/book.jpg"
                     width="370"
@@ -243,15 +274,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Magazyn Limited Edition</p>
-                  <p class="proffessionport">Dizajn</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Magazyn Limited Edition</p>
+                  <p class="gird-figcaption__proffession">Dizajn</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/label.jpg"
                     width="370"
@@ -265,15 +296,15 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Projekt LAB</p>
-                  <p class="proffessionport">Marketing</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Projekt LAB</p>
+                  <p class="gird-figcaption__proffession">Marketing</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-item">
+            <li class="gird__item">
               <figure>
-                <div class="portfolio-item-container">
+                <div class="gird-container">
                   <img
                     src="./images/laptop.jpg"
                     width="370"
@@ -287,9 +318,9 @@
                     i ataków na niezabezpieczone serwery konkurencji
                   </div>
                 </div>
-                <figcaption class="portmenu">
-                  <p class="name">Growing Business</p>
-                  <p class="proffessionport">Aplikacja</p>
+                <figcaption class="gird-figcaption">
+                  <p class="gird-figcaption__name">Growing Business</p>
+                  <p class="gird-figcaption__proffession">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
@@ -298,48 +329,76 @@
       </section>
     </main>
     <footer>
-      <div class="container footermain">
-        <div class="oldpartoffooter">
+      <div class="container footer-container">
+        <div class="footer-container__first-part">
           <a href="./index.html" class="logo"
-            ><span class="firstpartlogo">Web</span
-            ><span class="secondpartlogo">Studio</span></a
+            ><span class="logo__first-part">Web</span
+            ><span class="logo__third-part">Studio</span></a
           >
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <p class="email">info@example.com</p>
-          <p class="telnr">+48 111 111 111</p>
+          <address class="footer-container__address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <p class="footer-container__email">info@example.com</p>
+          <p class="footer-container__telnr">+48 111 111 111</p>
         </div>
-        <div class="newpartoffooter">
-          <h3 class="h3footer">dołącz do nas</h3>
-          <ul class="socialmedia-icons-list">
+        <div class="footer-container__second-part">
+          <h3 class="footer-container__name">dołącz do nas</h3>
+          <ul class="team__socialmedia-contents-list">
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="socialmedia-icon">
+              <div class="team__socialmedia-content">
                 <svg width="20" height="20" fill="white">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </div>
             </li>
           </ul>
+        </div>
+        <div class="footer-container__third-part">
+          <form>
+            <div class="footer-container__third-part-flexbox">
+              <div class="footer-container-content">
+                <label
+                  for="footer-email-input-id"
+                  class="footer-container-content__name"
+                  >zapisz się do newslettera</label
+                >
+                <input
+                  id="footer-email-input-id"
+                  type="email"
+                  name="email"
+                  class="footer-container-content__input"
+                  placeholder="E-mail"
+                />
+              </div>
+              <button type="submit" class="button-footer">
+                Zapisz się
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-strzalka"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
