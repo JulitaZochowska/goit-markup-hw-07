@@ -224,7 +224,7 @@
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Product Designer</p>
-                  <ul class="team team--margin team__socialmedia-contents-list">
+                  <ul class="team__socialmedia-contents-list">
                     <li>
                       <div class="team__socialmedia-content">
                         <svg width="20" height="20">
@@ -392,36 +392,36 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container nasiklienci-main">
-          <h2 class="nasiklienci-margin">Nasi klienci</h2>
-          <ul class="nasiklienci-general">
-            <li class="nasiklienci-svg">
+      <section class="our-customers">
+        <div class="container our-customers__content">
+          <h2 class="our-customers__name">Nasi klienci</h2>
+          <ul class="our-customers__list">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-1"></use>
               </svg>
             </li>
-            <li class="nasiklienci-svg">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-2"></use>
               </svg>
             </li>
-            <li class="nasiklienci-svg">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-3"></use>
               </svg>
             </li>
-            <li class="nasiklienci-svg">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-4"></use>
               </svg>
             </li>
-            <li class="nasiklienci-svg">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-5"></use>
               </svg>
             </li>
-            <li class="nasiklienci-svg">
+            <li class="our-customers__item">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-logo-6"></use>
               </svg>
@@ -503,66 +503,80 @@
     <div class="modal-container is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-header">
-          <button data-modal-close class="modal-close-button">
+          <button data-modal-close class="modal-header__close-button">
             <svg width="24" height="24">
               <use href="./images/icons.svg#close-icon"></use>
             </svg>
           </button>
         </div>
-        <div class="modal-window-items">
-          <p class="fill-window-modal">
+        <div class="modal-window-content">
+          <p class="modal-window-content__label">
             Zostaw swoje dane w formularzu ponizej
           </p>
           <form>
-            <label class="label-1" for="username-input-id">Imie</label>
-            <div class="input-field-container">
+            <label
+              class="modal-window-content__description"
+              for="username-input-id"
+              >Imie</label
+            >
+            <div class="modal-window-content__container">
               <input
                 type="text"
                 name="username"
                 id="username-input-id"
-                class="modal-window-input"
+                class="modal-window-content__input"
               />
-              <svg class="icons-modal-window" width="18" height="18">
+              <svg class="modal-window-content__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="label-1" for="tel-input-id">Telefon</label>
-            <div class="input-field-container">
+            <label class="modal-window-content__description" for="tel-input-id"
+              >Telefon</label
+            >
+            <div class="modal-window-content__container">
               <input
                 type="text"
                 name="tel"
                 id="tel-input-id"
-                class="modal-window-input"
+                class="modal-window-content__input"
               />
-              <svg class="icons-modal-window" width="18" height="18">
+              <svg class="modal-window-content__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="label-1" for="email-input-id">Email</label>
-            <div class="input-field-container">
+            <label
+              class="modal-window-content__description"
+              for="email-input-id"
+              >Email</label
+            >
+            <div class="modal-window-content__container">
               <input
                 type="text"
                 name="email"
                 id="email-input-id"
-                class="modal-window-input"
+                class="modal-window-content__input"
               />
-              <svg class="icons-modal-window" width="18" height="18">
+              <svg class="modal-window-content__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
-            <label class="label-1" for="textarea-textarea-id">Komentarz</label>
+            <label
+              class="modal-window-content__description"
+              for="textarea-textarea-id"
+              >Komentarz</label
+            >
             <textarea
               id="textarea-textarea-id"
               name="feedback"
-              class="textarea"
+              class="modal-window-content__textarea"
               placeholder="Wprowadź tekst"
             ></textarea>
-            <div class="input-field-container-2">
+            <div class="modal-window-content__container-2">
               <input
                 id="checkbox-input"
                 type="checkbox"
                 name="checkbox"
-                class="checkbox-window-modal"
+                class="modal-window-content__description"
               />
               <label for="checkbox-input" class="label-checkbox"
                 >Oświadczam iź akceptuje
